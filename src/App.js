@@ -1,7 +1,14 @@
 import './App.css';
 
-function App() {
-  return <div className="App">Hello world</div>;
-}
+import Feedback from './components/feedback';
+
+const App = () => {
+  return (
+    <>
+      <h1>Feedback</h1>
+      <Feedback />
+    </>
+  );
+};
 
 export default App;
