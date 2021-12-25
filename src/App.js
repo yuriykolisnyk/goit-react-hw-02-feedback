@@ -11,8 +11,7 @@ class App extends Component {
     bad: 0,
   };
 
-  onLeaveFeedback = event => {
-    const item = event.target.textContent;
+  onLeaveFeedback = item => {
     this.setState(PrevState => ({ [item]: PrevState[item] + 1 }));
   };
 
